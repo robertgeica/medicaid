@@ -30,7 +30,7 @@ const Header = () => {
                         Medicaid
                     </IconButton>
                     <List 
-                        component ="nav" 
+                        cbomponent ="nav" 
                         aria-labelledby="main navigation"
                         className = {classes.navDisplayFlex}
                     >
