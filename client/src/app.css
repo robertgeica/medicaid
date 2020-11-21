@@ -2,3 +2,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.site-footer {
+    font-size: 14px;
+    color: #202020; }
+    .site-footer a {
+      color: #202020;
+      text-decoration: none; }
+      .site-footer a:hover, .site-footer a:active {
+        color: #768696; }
+  
+  .site-footer-inner {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  
