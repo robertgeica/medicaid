@@ -1,6 +1,11 @@
 import React, {useState} from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
+import Radio from '@material-ui/core/Radio'
+import RadioGroup from '@material-ui/core/RadioGroup'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormControl from '@material-ui/core/FormControl'
+import FormLabel from '@material-ui/core/FormLabel'
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
@@ -9,6 +14,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { ArrowDropDown, ArrowDropDownCircleOutlined, RadioButtonCheckedOutlined } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -129,6 +135,27 @@ export default function Signup() {
                 })}}
               />
             </Grid>
+            <Grid item xs={12}>
+              <center>
+                <FormControl component = 'fieldset'>
+                  <FormLabel component = 'legend'>Are you a doctor or patient?</FormLabel>
+                  <RadioGroup row aria-label='position' name='position' defaultValue='end'>
+                    <FormControlLabel
+                      value="doctor"
+                      control={<Radio color = "primary"/>}
+                      label = 'Doctor'
+                      labelPlacement = 'end'
+                    />
+                    <FormControlLabel
+                      value="patient"
+                      control={<Radio color = "primary"/>}
+                      label = 'Patient'
+                      labelPlacement = 'end'
+                    />
+                  </RadioGroup>
+                </FormControl>
+                </center>
+            </Grid>
           </Grid>
           <Button
             type="submit"
@@ -139,7 +166,7 @@ export default function Signup() {
           >
             Sign Up
           </Button>
-          <Grid container justify="flex-end">
+          <Grid align = 'center'>
             <Grid item>
               <Link href="#" variant="body2">
                 Already have an account? Sign in

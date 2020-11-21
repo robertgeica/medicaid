@@ -15,8 +15,8 @@ const useStyles = makeStyles({
     }
 });
 const navLinks = [
-    { title: "About", path: '/about'},
-    { title: "Services", path: '/services'}
+    { title: "Login", path: '/login'},
+    { title: "Sign Up", path: '/signup'}
 ]
 
 const Header = () => {
@@ -27,6 +27,7 @@ const Header = () => {
                 <Container className = {classes.navDisplayFlex}>
                     <IconButton edge="start" color ="inherit" aria-label="home">
                         <Home fontSize = "large" />
+                        Medicaid
                     </IconButton>
                     <List 
                         component ="nav" 
