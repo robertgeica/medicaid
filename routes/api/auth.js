@@ -13,7 +13,7 @@ const Medic = require('../../models/Medic');
 // @access        Public
 router.post('/', async (req, res) => {
 	const { role, email, password } = req.body;
-
+	console.log(role, email, password);
 	try {
 		if (role == 'medic') {
 			let medic = await Medic.findOne({ email });
