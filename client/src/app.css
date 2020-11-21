@@ -1,9 +1,44 @@
 * > body {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
 }
 
+.title {
+font-family: 'Calibri', sans-serif;
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+}
+
+/*------homepage------*/
+
+.homepage img {
+height: 600px;
+overflow: hidden;
+position: relative;
+left: 50%;
+transform: translate(-50%);
+}
+
+.box {
+width: 45%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+margin-left: auto;
+margin-right: auto;
+background-color: #fff;
+opacity: 80%;
+padding: 50px;
+font-family: 'Calibri', sans-serif;
+}
+
+/*-----Footer-----*/
+
 .site-footer {
+    font-family: 'Calibri', sans-serif;
     font-size: 14px;
     color: #202020; }
     .site-footer a {
