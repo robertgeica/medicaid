@@ -30,9 +30,9 @@ const Header = ({ isAuthenticated }) => {
 		<AppBar position="static" style={{ backgroundColor: '#64AFF3' }}>
 			<Toolbar>
 				<Container className={classes.navDisplayFlex}>
-					<IconButton edge="start" color="inherit" aria-label="home">
+					<IconButton edge="start" color ="inherit" aria-label="home" href='/'>
 						<Home fontSize="large" />
-						Medicaid
+						<div style={{fontFamily:'Calibri'}}><b>Medicaid</b></div>
 					</IconButton>
 					<List component="nav" aria-labelledby="main navigation" className={classes.navDisplayFlex}>
 						{renderLinks.map(({ title, path }) => (
