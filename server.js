@@ -13,6 +13,8 @@ app.use(express.json({ extended: false }));
 // routes
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/register', require('./routes/api/register'));
+app.use('/api/profile', require('./routes/api/profile'));
+app.use('/api/ticket', require('./routes/api/ticket'));
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
