@@ -4,7 +4,7 @@ import './app.css';
 const App = () => {
   return (
     <div>
-      <h1>Unihack 2020</h1>
+      <h1>Unihack Test 2020</h1>
     </div>
   )
 }
