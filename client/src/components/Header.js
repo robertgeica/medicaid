@@ -54,38 +54,3 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(Header);
-const navLinks = [
-    { title: "Login", path: '/login'},
-    { title: "Sign Up", path: '/signup'}
-]
-
-const Header = () => {
-    const classes = useStyles();
-    return (
-        <AppBar position="static" style={{ backgroundColor: "#64AFF3"}}>
-            <Toolbar>
-                <Container className = {classes.navDisplayFlex}>
-                    <IconButton edge="start" color ="inherit" aria-label="home">
-                        <Home fontSize = "large" />
-                        Medicaid
-                    </IconButton>
-                    <List 
-                        cbomponent ="nav" 
-                        aria-labelledby="main navigation"
-                        className = {classes.navDisplayFlex}
-                    >
-                        {navLinks.map (({ title, path }) => (
-                            <a href ={path} key ={title} className = {classes.linkText}>
-                                <ListItem button>
-                                    <ListItemText primary = {title} />
-                                </ListItem>
-                            </a>
-                        ))}
-                    </List>
-                </Container>    
-            </Toolbar>
-        </AppBar>
-    )
-}
-
-export default Header
