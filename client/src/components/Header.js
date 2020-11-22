@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [ { title: 'Login', path: '/login' }, { title: 'Sign Up', path: '/signup' } ];
-const authLinks = [ { title: 'Logout', path: '/logout' } ];
+const authLinks = [ { title: 'Logout', path: '/logout' }, { title: 'Profile', path: '/profile'} ];
 
 const Header = ({ isAuthenticated }) => {
 	const classes = useStyles();
