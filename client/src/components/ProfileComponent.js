@@ -21,24 +21,22 @@ const useStyles = makeStyles((theme) => ({
 const ProfileComponent = ({ isAuthenticated, user }) => {
     const classes = useStyles();
 
-   if (user.role = "medic"){
+   if (user.role == "medic"){
     return(
-        <div className={classes.root}>
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
+        <div className={classes.root} style={{margin:"5% 10%",backgroundColor:"#fff",padding:"50px",fontFamily:'Calibri'}}>
+            <h1>Doctor Information</h1>
+            <Grid container spacing={3} direction={'column'}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>First Name = {user.firstName}</Paper>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>Last Name = {user.lastName}</Paper>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>Email = {user.email}</Paper>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>Phone Number= {user.phoneNumber}</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    <Paper className={classes.paper}>First name = {user.firstName}</Paper>
                 </Grid>
             </Grid>
         </div>
@@ -47,22 +45,20 @@ const ProfileComponent = ({ isAuthenticated, user }) => {
    }
    else{
        return(
-        <div className={classes.root}>
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
+        <div className={classes.root} style={{margin:"5% 10%",backgroundColor:"#fff",padding:"50px",fontFamily:'Calibri'}}>
+            <h1>Patient Information</h1>
+            <Grid container spacing={3} direction={'column'}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>First Name = {user.firstName}</Paper>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>Last Name = {user.lastName}</Paper>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>Email = {user.email}</Paper>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={2}>
                     <Paper className={classes.paper}>Phone Number= {user.phoneNumber}</Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    <Paper className={classes.paper}>First name = {user.firstName}</Paper>
                 </Grid>
             </Grid>
         </div>
